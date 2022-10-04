@@ -59,3 +59,8 @@ button:hover {
   cursor: pointer;
   color: black;
 }
+#footer {
+  display: block;
+  margin: 0 20px;
+  text-align: center;
+}

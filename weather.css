@@ -1,5 +1,6 @@
 body {
   font-family: arial, sans-serif;
+  background-color: rgb(138, 138, 190);
 }
 
 h1 {
@@ -25,11 +26,12 @@ li {
 }
 
 .weather-app {
-  border: 2px solid #dadde1;
+  border: 3px solid #060b0f;
   padding: 15px;
-  margin: 30px auto;
-  border-radius: 10px;
-  max-width: 700px;
+  margin: 40px auto;
+  border-radius: 50px;
+  max-width: 800px;
+  background-image: url("https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg?cs=srgb&dl=pexels-pixabay-209831.jpg&fm=jpg");
 }
 
 .temperature {
@@ -56,4 +58,14 @@ button:hover {
   display: block;
   margin: 0 20px;
   text-align: center;
+}
+#button-location {
+  border-radius: 100px;
+  width: 150px;
+}
+#city-input {
+  border-radius: 25%;
+}
+#search-input {
+  border-radius: 75%;
 }

@@ -69,3 +69,8 @@ button:hover {
 #search-input {
   border-radius: 75%;
 }
+#shecodes-logo {
+  display: inline;
+  margin-left: 120px;
+  width: 200px;
+}

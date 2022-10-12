@@ -1,14 +1,10 @@
 function showCity(response) {
-  console.log(response);
-  let h1 = document.querySelector("h1");
-  let name = response.data.name;
-  h1.innerHTML = name;
-  let temp = Math.round(response.data.main.temp);
-  let temperature = document.querySelector("#temperature");
-  let description = document.querySelector("#description");
-  let desc = response.data.weather[0].description;
-  description.innerHTML = desc;
-  temperature.innerHTML = temp;
+  document.querySelector("h1").innerHTML = response.data.name;
+  document.querySelector("#description").innerHTML =
+    response.data.weather[0].description;
+  document.querySelector("#temperature").innerHTML = Math.round(
+    response.data.main.temp
+  );
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed

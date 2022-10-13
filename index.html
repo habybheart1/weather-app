@@ -12,6 +12,10 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="weather.css" />
   </head>
   <body>
@@ -24,7 +28,7 @@
         />
         <form class="search-form" id="search-form">
           <div class="row">
-            <div class="col-6">
+            <div class="col-8">
               <input
                 type="search"
                 placeholder="Enter a city.."
@@ -34,7 +38,7 @@
                 class="form-control shadow-sm"
               />
             </div>
-            <div class="col-3">
+            <div class="col-2">
               <input
                 type="submit"
                 value="Search"
@@ -42,14 +46,8 @@
                 id="search-input"
               />
             </div>
-            <div class="col-3">
-              <button
-                class="btn btn-success"
-                id="button-location"
-                type="submit"
-              >
-                location
-              </button>
+            <div class="col-2">
+              <i class="fa fa-globe" id="button-location" type="submit">🌍</i>
             </div>
           </div>
         </form>

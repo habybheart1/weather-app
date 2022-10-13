@@ -77,3 +77,10 @@ button:hover {
   vertical-align: top;
   width: 60px;
 }
+.units .celsius {
+  color: #060b0f;
+  cursor: default;
+}
+.units .celsius:hover {
+  text-decoration: none;
+}

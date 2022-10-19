@@ -83,13 +83,10 @@ button:hover {
 .units .celsius:hover {
   text-decoration: none;
 }
-.weather-forcast {
+.weather-forecast {
   text-align: center;
   padding: 12px;
-  height: 120px;
-  line-height: 1;
-  margin-right: 7px;
-  width: 75px;
 }
-.weather-forcast-temp {
+.weather-forcast-temp-min {
+  opacity: 0.6;
 }

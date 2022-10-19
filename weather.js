@@ -60,6 +60,44 @@ function formatTime(time) {
   return `${day}, ${hours}:${minutes}`;
 }
 
+function displayForcast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  forecastHTML =
+    forecastHTML +
+    `
+              <div class="col-2">
+                <div class="weather-forecast-date">Friday</div>
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                  id="icon"
+                  width="45px"
+                />
+                <div class="weather-forecast-temp">
+                  <span class="weather-forcast-temp-max">18°</span
+                  ><span class="weather-forcast-temp-min">12°</span>
+                </div>
+</div>`;
+
+  forecastHTML =
+    forecastHTML +
+    `
+              <div class="col-2">
+                <div class="weather-forecast-date">Friday</div>
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                  id="icon"
+                  width="45px"
+                />
+                <div class="weather-forecast-temp">
+                  <span class="weather-forcast-temp-max">18°</span
+                  ><span class="weather-forcast-temp-min">12°</span>
+                </div>
+</div>`;
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function showPosition(position) {
   let apiKey = "a7f9089acdb831d30158dfbfe345785f";
   let url = "https://api.openweathermap.org/data/2.5/weather";
@@ -89,6 +127,8 @@ function showCelsiusTemp(event) {
   document.querySelector("#temperature").innerHTML =
     Math.round(celsiusTemperature);
 }
+
+displayForcast();
 
 let celsiusTemperature = null;
 

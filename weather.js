@@ -51,7 +51,6 @@ function showPosition(position) {
 function button(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(showPosition);
-  //return showPosition;
 }
 
 function formatTime(time) {
@@ -79,7 +78,7 @@ function formatTime(time) {
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
-  let daysWeek = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
+  let daysWeek = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"];
   return daysWeek[day];
 }
 

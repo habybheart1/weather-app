@@ -1,5 +1,5 @@
 body {
-  font-family: arial, sans-serif;
+  font-family: Averia Gruesa Libre, sans-serif;
   background-color: rgb(138, 138, 190);
 }
 .weather-app {
@@ -41,7 +41,7 @@ li {
 
 .units {
   position: relative;
-  top: -34px;
+  top: -29px;
 }
 
 .search-form {
@@ -62,7 +62,7 @@ button:hover {
   border-radius: 25%;
 }
 #search-input {
-  border-radius: 75%;
+  border-radius: 55%;
 }
 #shecodes-logo {
   display: block;

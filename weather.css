@@ -85,7 +85,6 @@ button:hover {
 }
 .weather-forecast {
   text-align: center;
-  padding: 12px;
 }
 .weather-forcast-temp-min {
   opacity: 0.6;
